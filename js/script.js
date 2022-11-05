@@ -13,20 +13,29 @@ fetch('json/data.json')
     const phone = document.querySelector('#phone');
     const email = document.querySelector('#email');
 
+    //profile picture
     profile.setAttribute('src', person.profile);
+    //name
     name.innerHTML = person.name;
 
-    const ul = document.createElement('ul');
+    //skill
+    const table = document.querySelector('#table-skill');
     person.skill.map((msg) => {
-        const h3 = document.createElement('h3');
-        const li = document.createElement('li');
-        const text = document.createTextNode(msg);
-        li.appendChild(h3);
-        h3.appendChild(text);
-        ul.appendChild(li);
-    });
-    skills.appendChild(ul);
+        const tr = document.createElement('tr');
+        const td1 = document.createElement('td');
+        const td2 = document.createElement('td');
 
+        const lang = document.createTextNode(msg.lang);
+        const score = document.createTextNode(msg.score + " / " + "5");
+        td1.appendChild(lang);
+        td2.appendChild(score);
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        table.appendChild(tr);
+    });
+    skills.appendChild(table);
+
+    //resume
     person.resume.map((msg) => {
         const h3 = document.createElement('h3');
         const text = document.createTextNode(msg);

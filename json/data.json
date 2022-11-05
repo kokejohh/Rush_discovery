@@ -3,7 +3,16 @@
         "username": "pithipra",
         "name": "Pitchakorn Thiprangsi",
         "profile": "https://s.isanook.com/wo/0/ud/4/20927/d21.jpg",
-        "skill": ["C", "C++", "C#"],
+        "skill": [{
+            "lang": "C",
+            "score": "4"
+        }, {
+            "lang": "C++",
+            "score": "4"
+        }, {
+            "lang": "C#",
+            "score": "1"
+        }],
         "resume": [
             "Uthaiwitthayakhom",
             "Thammasat Univerity"
@@ -16,10 +25,18 @@
         "username": "schucham",
         "name": "FirstName LastName",
         "profile": "https://image.sistacafe.com/w800/images/uploads/summary/image/10341/1465463914-stretch-shiba-cheek10.jpg",
-        "skill": ["C", "Python"],
+        "skill": [{
+            "lang": "C#",
+            "score": "3"
+        }, {
+            "lang": "Python",
+            "score": "3"
+        }, {
+            "lang": "Java",
+            "score": "2"
+        }],
         "resume": [
-            "Mairukrub",
-            "Thammasat Univerity"
+            "Mae Fah Luang University"
         ],
         "contact": {
             "phone": "096-xxx-xxxx",
