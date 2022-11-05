@@ -9,7 +9,7 @@ fetch('json/data.json')
     const profile = document.querySelector('#profile');
     const name = document.querySelector('#name');
     const skills = document.querySelector('#skill');
-    const resume = document.querySelector('#resume');
+    const education = document.querySelector('#education');
     const phone = document.querySelector('#phone');
     const email = document.querySelector('#email');
 
@@ -35,12 +35,12 @@ fetch('json/data.json')
     });
     skills.appendChild(table);
 
-    //resume
-    person.resume.map((msg) => {
+    //education
+    person.education.map((msg) => {
         const h3 = document.createElement('h3');
         const text = document.createTextNode(msg);
         h3.appendChild(text);
-        resume.appendChild(h3);
+        education.appendChild(h3);
     });
 
     phone.textContent = person.contact.phone;
