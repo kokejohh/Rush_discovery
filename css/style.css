@@ -16,3 +16,21 @@
         font-size: x-large;
     }
 }
+
+.box-shadow {
+    background-color: white;
+    box-shadow: 2px 8px 5px black;
+}
+
+.box-shadow:hover {
+    background-color: ghostwhite;
+    box-shadow: 4px 8px 10px black;
+}
+
+.box-shadow:hover .text-shadow {
+    text-shadow: 2px 2px 2px gray;
+}
+
+.bg-lightgrey {
+    background-color: LightGrey;
+}
