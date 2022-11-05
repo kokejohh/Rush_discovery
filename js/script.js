@@ -42,7 +42,9 @@ fetch('json/data.json')
         h3.appendChild(text);
         education.appendChild(h3);
     });
-
+    
+    //contact
     phone.textContent = person.contact.phone;
     email.textContent = person.contact.email;
-})
+});
+
