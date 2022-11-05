@@ -1,0 +1,18 @@
+@media screen and (min-width: 576px) {
+    .img-pic {
+        width: 300px;
+    }
+    .name {
+        font-size: xx-large;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .img-pic {
+        width: 200px;
+    }
+
+    .name {
+        font-size: x-large;
+    }
+}
